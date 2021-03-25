@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to the start of Agis art platform. 
 
-Things you may want to cover:
+With this platform, hope to build an great tool to facilitate online bidding, this will focus on image based bidding, for now art. 
 
-* Ruby version
+Please feel free to contact Joshua Waiswa over email at jwaiswa7@gmail.com if you wish to contribute. 
 
-* System dependencies
+If you wish to contribute financially towards this project, please send crypto to: 
+Bitcoin: 19iiE6XYCKBrg5TEUPEgAQZwnkMMusPAGq
+Eth: 0x502c50eec8c898a037b50a03d690f594e09b0065
 
-* Configuration
+Or contact Joshua over email. 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Thanks. 
