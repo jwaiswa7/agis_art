@@ -12,4 +12,9 @@ Eth: 0x502c50eec8c898a037b50a03d690f594e09b0065
 
 Or contact Joshua over email. 
 
-Thanks. 
+Thanks.
+
+Generate controller api without views
+```
+rails generate controller api/v1/Tickers index -j=false -y=false --skip-template-engine --no-helper
+``` 

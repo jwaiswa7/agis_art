@@ -28,6 +28,13 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem "figaro" # env variables
+
+gem "sidekiq", "~> 6.1.2" # Sidekiq is used to process background jobs with the help of Redis
+gem "sidekiq-cron", "~> 1.2" # Enables to set jobs to be run in specified time (using CRON notation)
+gem "sidekiq-unique-jobs", "~> 6.0.25" # Ensures that Sidekiq jobs are unique when enqueued
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
