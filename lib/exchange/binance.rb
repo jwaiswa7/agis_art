@@ -15,7 +15,7 @@ module Exchange
 
 		def update_ticker(response)
 			ticker = Ticker.find_by_symbol(response["symbol"])
-			ticker.update!(
+			ticker.update(
 			  	priceChange: response["priceChange"].to_f, 
 			  	priceChangePercent: response["priceChangePercent"].to_f, 
 			  	weightedAvgPrice: response["weightedAvgPrice"].to_f, 

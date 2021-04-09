@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Ticker::SYMBOLS.each do |symbol|
+	puts "Creating #{symbol}"
+	Ticker.create(symbol: symbol) unless Ticker.find_by_symbol(symbol)	
+end
