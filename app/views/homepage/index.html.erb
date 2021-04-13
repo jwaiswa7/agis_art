@@ -1,6 +1,15 @@
-<%= render partial: 'shared/components/tickers_card', locals: { tickers: @tickers } %>
-
-<ul>
-	<li>Lets create a market maker for you</li>
-	<li>Contact us at jwaiswa7@gmail.com</li>
-</ul>
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+   <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h3>Keep informed within the crypto space</h3>
+      <h2>we pride ourselves in providing the best information about the current trend in the crypto currency space. You don't need to be an expert</h2>
+   </div>
+</section>
+<!-- End Hero -->
+<main id="main">
+   <section class="services">
+      <div class="container" data-aos="fade-up">
+         <%= render partial: 'shared/components/tickers_card', locals: { tickers: @tickers } %>
+      </div>
+   </section>
+</main>

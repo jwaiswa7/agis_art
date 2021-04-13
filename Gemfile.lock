@@ -72,6 +72,7 @@ GEM
     concurrent-ruby (1.1.8)
     connection_pool (2.2.3)
     crass (1.0.6)
+    cryptofont-rails (0.1.2)
     diff-lcs (1.4.4)
     erubi (1.10.0)
     et-orbi (1.2.4)
@@ -229,6 +230,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  cryptofont-rails
   factory_bot_rails
   faker!
   figaro

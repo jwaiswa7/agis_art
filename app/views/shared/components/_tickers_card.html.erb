@@ -1,16 +1,13 @@
 <div class="row">
-  <% tickers.each do |ticker| %>
-  	<div class="col-4">
-  		<div class="card">
-  			<div class="card-header">
-  				<%= ticker.symbol %>
-  			</div>
-  			<div class="car-body">
-  				Price change <%= ticker.priceChange.positive? ? "+": "-" %> <%= ticker.priceChangePercent %>%
-  				Price: <%= ticker.weightedAvgPrice.round(2) %>
-
-  			</div>
-  		</div>
-  	</div>
-  <% end %>
+   <% tickers.each do |ticker| %>
+   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+      <div class="icon-box">
+         <div class="icon"><i class=<%= "cf-#{ticker.symbol[0..2].downcase}" %> ></i></div>
+         <h4><a href=""><%= ticker.symbol %></a></h4>
+         <p>Price change <%= ticker.priceChange.positive? ? "+": "-" %> <%= ticker.priceChangePercent %>%
+            Price: <%= ticker.weightedAvgPrice.round(2) %>
+         </p>
+      </div>
+   </div>
+   <% end %>
 </div>
