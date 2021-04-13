@@ -34,5 +34,8 @@ module AgisArt
 
     # add the libs folder 
     config.eager_load_paths << Rails.root.join("lib")
+
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+
   end
 end
